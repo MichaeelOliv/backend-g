@@ -1,5 +1,6 @@
 const path = require('path');
-// Garante que o .env seja lido da raiz do projeto
+// Carrega server.env (PORT, JWT_SECRET) e depois .env (DB_USERNAME, DB_PASSWORD, etc)
+require('dotenv').config({ path: path.resolve(__dirname, '../server.env') });
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const app = require('./app');
