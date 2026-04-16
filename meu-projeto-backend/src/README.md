@@ -41,7 +41,14 @@ Antes de começar, você precisa ter instalado em sua máquina:
    JWT_SECRET=sua_chave_secreta_segura
    ```
 
-   > **Nota:** Certifique-se de criar o banco de dados `meu_projeto_backend` no seu MySQL antes de rodar a aplicação, ou deixe o Sequelize criá-lo se configurado para tal.
+   > **Nota:** O arquivo `meu-projeto-backend/server.env` não deve ser enviado ao repositório e está listado no `.gitignore` para proteger dados sensíveis.
+   > Certifique-se de manter essas credenciais apenas localmente.
+
+## 📘 Documentação da API
+
+A documentação Swagger está disponível após iniciar a aplicação em:
+
+- `http://localhost:4000/api-docs`
 
 ## ▶️ Como Rodar 
 
